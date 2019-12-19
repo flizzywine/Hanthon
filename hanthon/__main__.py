@@ -1,7 +1,13 @@
 import re
 import subprocess
 import sys
-code_file = sys.argv[1]
+import os
+import argparse
+
+parser = argparse.ArgumentParser("执行Hanthon语言所写的程序")
+parser.add_argument("file",help="源文件名")
+args = parser.parse_args()
+code_file = args.file
 
 table = open('table.org').read()
 # 怎么才能改成相对引用, 而不是把路径写死
@@ -37,9 +43,14 @@ def trans2en(mo):
 
 code = pat.sub(trans2en, code)
 
-with open('hancache.py', 'w') as f:
+tmpfile = "hancache.py"
+if os.path.exists(tmpfile):
+   tmpfile = tmpfile + "10086"
+   
+with open(tmpfile, 'w') as f:
     f.write(code)
 
-print(code)    
 
-subprocess.run(["python3", "hancache.py"])
+subprocess.run([sys.executable, tmpfile])
+
+os.remove(tmpfile)
