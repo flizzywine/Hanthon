@@ -13,7 +13,7 @@ Hanthon 汉语Python
 
 
 
-#  Hello World
+#  Demo
 
 ## 二分搜索
 
@@ -246,6 +246,7 @@ with open("语录.txt", "w") as str:
 
 Hanthon本质上只是Python的一张皮, 所做的仅仅是将特定中文关键词转化成英文.
 因此.Hanthon语言可以用一张中英对照表来描述.
+你可以在源文件`table.org`中进行自定义.
 
 ## 变量
 支持变量类型申明
@@ -254,6 +255,12 @@ Hanthon本质上只是Python的一张皮, 所做的仅仅是将特定中文关�
 | ------ | ------- |
 | int    | 整      |
 | float  | 浮      |
+|str|文|
+|list|表|
+|dict|典|
+|None|空|
+|True|好|
+|False|坏|
 
 
 
@@ -287,6 +294,15 @@ Hanthon本质上只是Python的一张皮, 所做的仅仅是将特定中文关�
 | else   | 否则    |
 | elif   | 若则    |
 
+## 块
+| Python | Hanthon |
+| ------ | ------- |
+|def|有|
+|return|得|
+|pass|云云|
+|global|外|
+|try|试|
+|except|误|
 
 
 ## 面向对象 
@@ -296,18 +312,34 @@ Hanthon本质上只是Python的一张皮, 所做的仅仅是将特定中文关�
 | class      | 名      |
 | `__init__` | 初      |
 | self       | 己      |
+|super| 祖|
+
+# 其他
+
+| Python     | Hanthon |
+| ---------- | ------- |
+|in|于|
+|as|即|
+|from|自|
+|import|引|
+|yield|求|
+|del|删|
+
+
+# 常用函数
+| Python     | Hanthon |
+| ---------- | ------- |
+|print|见|
+|range|区间|
+|append|补|
+|len|长|
+|sort|排序|
+|open|开|
+|read|读|
+|write|写|
 
 
 
-## I/O
-
-## 生成器
-
-## 高阶函数
-
-## 异常控制
-
-## 模块引入
 
 
 

@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="hanthon", # Replace with your own username
-    version="0.0.1",
+    version="0.0.3",
     author="flizzywine",
     author_email="1041958497@qq.com",
     description="Write Python in Chinese",
@@ -18,5 +18,5 @@ setuptools.setup(
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
     ],
-    python_requires='>=3.4',
+    python_requires='>=3.6',
 )
